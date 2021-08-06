@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Get your coffe here</title>
+
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+
+	<script type="text/javascript" src="js/jquery.min.js"></script>
+	<script type="text/javascript" src="js/bootstrap.min.js"></script>
+
+	<style type="text/css">
+		/* width */
+::-webkit-scrollbar {
+  width: 9px;
+  scroll-behavior: smooth;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background-color: grey;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #000000b0;
+  border-radius: 30px;
+  transition: .2s;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: black;
+  transition: .2s;
+}
+		body{
+			background-color: black;
+		}
+
+		.row{
+		}
+
+		#left_header, #right_header{
+			height: 658px;
+		}
+
+		#left_header{
+			background-color: #630892;
+		}
+
+		#right_header{
+			background-color: #ef4986;
+		}
+
+		.row, body, .container-fluid, .row div{
+			padding: 0px;
+			margin: 0px;
+		}
+
+		/*div{
+			border: 4px solid green;
+		}*/
+
+			#container_menu_itens{
+				padding-right: 5%;
+				width: 100%;
+				box-shadow: 0 20px 13px 0px black;
+			}
+
+					#logo{
+						background-color: transparent;
+						border: none;
+						color: white;
+						font-size: 4em;
+						font-family: "Forte";
+					}
+
+					.menu_itens{
+						background-color: transparent;
+						border: none;
+						color: white;
+						font-size: 1.5em;
+						transition: .2s;
+						border-radius: 5px;
+						margin-left: 2%;
+						width: 15%;
+					}
+
+					.menu_itens:hover{
+						cursor: pointer;
+						background-color: #ef4986;
+						transition: .2s;
+					}
+
+			#header_content{
+				margin-left: 2%;
+				margin-top: 5%;
+				width: 92%;
+			}
+
+				#header_content h1{
+					color: white;
+					font-size: 3em;
+					font-family: "Levenim MT";
+					font-weight: bold;
+				}
+
+				#header_content h4{
+					color: white;
+					text-align: justify;
+				}
+
+				#get_it_now_btn{
+					color: black;
+					background-color: #ef4986;
+					border-radius: 30px;
+					border: none;
+					font-size: 2em;
+					padding: 1%;
+					padding-left: 4%;
+					padding-right: 4%;
+					width: 50%;
+					font-weight: bold;
+					transition: .4s;
+				}
+
+				#get_it_now_btn:hover{
+					cursor: pointer;
+					transition: .4s;
+					background-color: #9e3807;
+					color: white;
+					box-shadow: -4px 18px 20px black;
+				}
+
+			#container_right_header{
+				margin-top: 5%;
+				margin-left: auto;
+				margin-right: auto;
+				display: block;
+				text-align: center;
+			}
+
+				#icon_right_header{
+					width: 50px;
+					height: 50px;
+				}
+
+				#order_now_btn{
+					color: white;
+					border-radius: 30px;
+					border: 5px solid white;
+					background-color: transparent;
+					width: 60%;
+					padding-bottom: 2%;
+					padding-top: 2%;
+					font-size: 1.4em;
+					font-weight: bold;
+					
+					transition: .4s;
+				}
+
+				#order_now_btn::placeholder{
+					color: white;
+					text-align: left;
+					padding-left: 5%;
+					font-family: "Lucida Handwriting";
+				}
+
+				#order_now_btn:focus::placeholder{
+					transition: .4s;
+					color: #1bff00;
+				}
+
+				#order_now_btn:focus{
+					width: 80%;
+					transition: .4s;
+					border-radius: 15px;
+					text-align: left;
+				}
+
+
+
+	</style>
+
+</head>
+<body>
+
+	<div class="container-fluid">
+		
+		<div class="row">
+
+			<div class="col-8" id="left_header">
+				<div class="row">
+					<div class="col-12 d-flex justify-content-end">
+						<div id="container_menu_itens" class="d-flex justify-content-end">
+							<button class="mr-auto ml-4" id="logo">Logo</button>
+							<button class="menu_itens">Home</button>
+							<button class="menu_itens">Service</button>
+							<button class="menu_itens">Offer</button>
+							<button class="menu_itens">Contact</button>
+						</div>
+					</div>
+				</div>
+
+				<div class="row">
+					<div id="header_content">
+						<h1>Let's make Your day <br>
+							with a coffee______</h1>
+						<h4>
+							Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+							tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+							quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+						</h4>
+
+						<button id="get_it_now_btn">Get It Now</button>
+					</div>
+				</div>
+
+			</div>
+
+			<div class="col-4" id="right_header">
+				<div class="col-12" id="container_right_header">
+
+					<img src="images/search-icon.png" id="icon_right_header">
+					<input type="text" name="" placeholder="Search..." id="order_now_btn">
+				</div>
+			</div>	
+			
+		</div>
+
+
+		<!-- <div class="row" style="margin-top: -8%; position: absolute;">
+			<div style="border: 5px dotted black">
+				<div style="border: 5px dotted black">
+					<div style="border: 5px dotted black">
+						<div class="col-10 w-100">something</div>
+					</div>
+				</div>
+			</div>
+		</div> -->
+
+	</div>
+
+
+</body>
+</html>
